@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <top-nav></top-nav>
     <bottom-nav></bottom-nav>
     <side-nav></side-nav>
     <swiper
@@ -35,6 +36,7 @@
 <script lang="ts">
 import { Component, Watch, Vue } from 'vue-property-decorator'
 import SideNav from '@/components/SideNav.vue'
+import TopNav from '@/components/TopNav.vue'
 import BottomNav from '@/components/BottomNav.vue'
 import Home from '@/views/Home.vue'
 import Contact from '@/views/Contact.vue'
@@ -44,6 +46,7 @@ import Works from '@/views/Works.vue'
 @Component({
   components: {
     SideNav,
+    TopNav,
     BottomNav,
     Home,
     Contact,
@@ -109,6 +112,7 @@ export default class App extends Vue {
 </script>
 
 <style lang="scss">
+@import "../src/assets/css/common.scss";
 body {
   margin: 0px;
 }
@@ -123,5 +127,10 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 </style>

@@ -34,10 +34,10 @@ export default class SideNav extends Vue {
 
   border-top: solid 3px #FFFFFF55;
   .tab-button {
-    padding: 10px 40px;
+    padding: 1rem 2rem;
   }
   .tab-center-button {
-    width: 6rem;
+    width: 4rem;
     height: 3rem;
     border: none;
     border-radius: 0.8rem;

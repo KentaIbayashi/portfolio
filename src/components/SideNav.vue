@@ -49,13 +49,12 @@ export default class SideNav extends Vue {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //margin-top: 25%;
   .like-icon {
     fill: #f2f2f2;
   }
   .touxiang img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.7rem;
+    height: 2.7rem;
     border-radius: 20px;
   }
   .side-button {

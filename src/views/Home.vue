@@ -1,12 +1,17 @@
 <template>
   <div class="home">
+    <!--
     <img class="image" src="../assets/image4.jpg">
+    -->
+    <div class="stripe image">
+      <div class="stripe_inner">aaaa</div>
+    </div>
     <div class="content">
       <!--
       <p>{{ $t("message.hello") }}</p>
       -->
       <div class="border-box">
-        <div class="header">
+        <div class="header ki-header-text">
           Kenta Ibayashi
         </div>
         <div class="sub-header">
@@ -36,11 +41,15 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="scss">
+// @import "@/assets/css/stripe_background.scss";
+
 .home {
   position: relative;
+  height: 100%;
 }
 .image {
   width: 100%;
+  height: 100%;
 }
 .content {
   top: 0;
@@ -51,6 +60,9 @@ export default class Home extends Vue {}
   height: 100vh;
   display: flex;
   align-items: center;
+
+  animation-name: fadeIn;
+  animation-duration: 3s;
 }
 .border-box {
   height: fit-content;
@@ -63,6 +75,15 @@ export default class Home extends Vue {}
   }
   .sub-header {
     font-size: 2rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 </style>
